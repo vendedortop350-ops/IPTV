@@ -17,10 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header('Location: dashboard.php');
             exit();
         } else {
-            $erro = 'Senha incorreta.';
+            $erro = 'senha esta errada confirma a senha denovo ou cria nova senha.';
         }
     } else {
-        $erro = 'Usuário não encontrado.';
+        $erro = 'email não encontrado ou nao cadastrado.';
     }
 }
 ?>
@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="password" name="senha" placeholder="Senha" required>
             <button type="submit">Entrar</button>
             <a class="link" href="cadastro.php">Criar conta</a>
+            <a class="link" href="../recupera.php">Esqueci a senha</a>
             <?php if (isset($erro)) echo '<p style="color:#f00">'.$erro.'</p>'; ?>
         </form>
     </div>

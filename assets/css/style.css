@@ -37,6 +37,12 @@
     transform: translateY(-3px) scale(1.045);
     box-shadow: 0 8px 32px #0ea5e9aa, 0 2px 0 #fff2 inset;
 }
+.dashboard-btn.logout-btn {
+    background: linear-gradient(90deg, #ef4444 0%, #b91c1c 100%);
+}
+.dashboard-btn.logout-btn:hover {
+    background: linear-gradient(90deg, #b91c1c 0%, #ef4444 100%);
+}
 .dashboard-btn svg {
     width: 1.5em;
     height: 1.5em;
